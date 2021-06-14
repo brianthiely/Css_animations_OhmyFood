@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"  },
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brianthiely/BrianThiely_3_13062021.git"
