@@ -6,6 +6,10 @@ a {
   text-decoration: none;
 }
 
+section {
+  padding: 0em 2em 0em 2em;
+}
+
 h1 {
   font-family: Shrikhand;
   margin: 0;
@@ -48,6 +52,31 @@ h2, h3, p {
   margin-bottom: 1em;
   font-weight: lighter;
   color: #4d4d4d;
+}
+.home__button {
+  margin-bottom: 1em;
+}
+
+.function__title {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.function-list {
+  list-style-type: none;
+  padding: 0;
+  counter-reset: numbStep;
+}
+.function-list__step {
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  padding: 1.7em;
+  margin-bottom: 1em;
+  box-shadow: 0.2em 0.2em 0.5em #ccc;
+}
+.function-list__step::before {
+  counter-increment: numbStep 1;
+  content: counter(numbStep) " ";
 }
 
 .header__logo {
@@ -92,7 +121,7 @@ button {
   padding: 1.2em 2.5em;
   border-radius: 100px;
   color: white;
-  background-image: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
+  background-image: radial-gradient(ellipse farthest-corner at 20px 0, #99E2D0 0%, #9356DC 100%);
   outline: none;
   border: none;
   cursor: pointer;
