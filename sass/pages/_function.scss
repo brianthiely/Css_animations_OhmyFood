@@ -3,11 +3,18 @@
     margin-bottom: 1em;
 }
 
+
+.function-list__icone--purple {
+    color: $color-primary;
+}
+
+
+
 .function-list {
     list-style-type: none;
     padding: 0;
     counter-reset: numbStep;
-
+    margin-bottom: 3em;
 
     &__step {
         border-radius: 20px;
@@ -15,10 +22,31 @@
         padding: 1.7em;
         margin-bottom: 1em;
         box-shadow: 0.2em 0.2em 0.5em #ccc;
+        position: relative;
 
-        &::before {
+          &::before {
             counter-increment: numbStep 1;
             content: counter(numbStep) " ";
+            background: $color-primary;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: absolute;
+            left: -0.75em;
+            }
+    }
+
+    &__icone{
+        color: #7e7e7e;
+        margin-right: 1em;
+
+        &--purple {
+            margin-right: 1em;
         }
     }
+
 }
