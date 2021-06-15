@@ -1,0 +1,38 @@
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+.footer {
+    background-color: #353535;
+
+    &__logo {
+        font-size: 1.2em;
+        font-weight: lighter;
+        color: white;
+        margin-top: 0;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    
+    }
+
+    &__link {
+        margin-bottom: 0.5em;
+    }
+
+    &__icone {
+        color: white;
+        margin-right: 0.7em;
+    }
+
+    &__nameLink {
+        color: white;
+    }
+}
+

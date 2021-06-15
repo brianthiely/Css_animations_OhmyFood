@@ -1,0 +1,9 @@
+button {
+    padding: 1.2em 2.5em;
+    border-radius: 100px;
+    color: white;
+    background-image: radial-gradient(ellipse farthest-corner at 20px 0, $color-secondary 0%, $color-primary 100%);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

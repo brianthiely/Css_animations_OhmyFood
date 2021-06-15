@@ -19,18 +19,18 @@
 
     <main>
         <section class="geo-loc">
-            <span class="geo-loc__icone"><i class="fas fa-map-marker-alt"></i></span>
+            <span class="geo-loc__icone"><i class="fas fa-map-marker-alt fa-lg"></i></span>
             <p class="geo-loc__city">Paris,Belleville</p>
         </section>
 
         <section class="home">
-            <h1 class="home__title">Réservez le menu qui vous convient</h1>
+            <h2 class="home__title">Réservez le menu qui vous convient</h2>
             <p class="home__subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             <button class="home__button">Explorer nos restaurants</button>
         </section>
 
         <section class="function">
-            <h1 class="function__title"></h1>
+            <h2 class="function__title">Fonctionnement</h2>
             <ul class="function-list">
                 <li class="function-list__step"><i class="fas fa-mobile-alt function-list__icone"></i> 
                 <span class="function-list__text">Choisissez un restaurant</span></li>
@@ -42,7 +42,7 @@
         </section>
 
         <section class="restaurants">
-            <h1 class="restaurants__title">Restaurants</h1>
+            <h2 class="restaurants__title">Restaurants</h2>
             <div class="container_card-rest">
 
                 <a href="./pages/menu_la_palette_du_gout.html" class="card-rest">
@@ -52,7 +52,7 @@
                     </div>
                     <div class="card-rest__footer">
                         <div class="card-rest__infos">
-                            <h2 class="card-rest__name">La palette du goût</h2>
+                            <h3 class="card-rest__name">La palette du goût</h3>
                             <p class="card-rest__city">Ménilmontant</p>
                         </div>
 
@@ -70,7 +70,7 @@
                     </div>
                     <div class="card-rest__footer">
                         <div class="card-rest__infos">
-                            <h2 class="card-rest__name">La note enchantée</h2>
+                            <h3 class="card-rest__name">La note enchantée</h3>
                             <p class="card-rest__city">Charonne</p>
                         </div>
 
@@ -88,7 +88,7 @@
                     </div>
                     <div class="card-rest__footer">
                         <div class="card-rest__infos">
-                            <h2 class="card-rest__name">À la française</h2>
+                            <h3 class="card-rest__name">À la française</h3>
                             <p class="card-rest__city">Cité Rouge</p>
                         </div>
 
@@ -106,7 +106,7 @@
                     </div>
                     <div class="card-rest__footer">
                         <div class="card-rest__infos">
-                            <h2 class="card-rest__name">Le délice des sens</h2>
+                            <h3 class="card-rest__name">Le délice des sens</h3>
                             <p class="card-rest__city">Folie-Méricourt</p>
                         </div>
 
@@ -121,34 +121,36 @@
     </main>
 </body>
 
-<footer>
-    <span class="footer__logo">ohmyfood</span>
-    <ul class="footer__list">
-        <li>
-            <a class="footer__link" href="#">
-                <i class="footer__icone fas fa-utensils"></i>
-                <span class="footer__nameLink">Proposer un restaurant</span>
-            </a>
-        </li>
+<footer class="footer">
+    <div class="container-footer">
+        <h1 class="footer__logo">ohmyfood</h1>
+        <ul class="footer__list">
+            <li class="footer__link">
+                <a href="#">
+                    <i class="footer__icone fas fa-utensils fa-sm"></i>
+                    <span class="footer__nameLink">Proposer un restaurant</span>
+                </a>
+            </li>
 
-        <li>
-            <a class="footer__link" href="#">
-                <i class="footer__icone fas fa-hands-helping"></i>
-                <span class="footer__nameLink">Devenir partenaire</span>
-            </a>
-        </li>
+            <li class="footer__link">
+                <a href="#">
+                    <i class="footer__icone fas fa-hands-helping fa-xs"></i>
+                    <span class="footer__nameLink">Devenir partenaire</span>
+                </a>
+            </li>
 
-        <li>
-            <a class="footer__link" href="#">
-                <span class="footer__nameLink">Mentions légales</span>
-            </a>
-        </li>
+            <li class="footer__link">
+                <a href="#">
+                    <span class="footer__nameLink">Mentions légales</span>
+                </a>
+            </li>
 
-        <li>
-            <a class="footer__link" href="#">
-                <span class="footer__nameLink">Contact</span>
-            </a>
-        </li>
-    </ul>
+            <li class="footer__link">
+                <a href="#">
+                    <span class="footer__nameLink">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </footer>
 </html>

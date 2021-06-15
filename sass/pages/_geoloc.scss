@@ -1,0 +1,17 @@
+.geo-loc {
+    background-color: #eaeaea;
+    box-shadow: 0px 3px 3px #73737338 inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+
+    &__icone {
+        margin-right: 1em;
+    }
+
+    &__city {
+        font-size: 1.1em;
+        font-weight: 600 ;
+    }
+}
