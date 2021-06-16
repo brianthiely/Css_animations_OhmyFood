@@ -3,7 +3,8 @@ button {
     border-radius: 100px;
     color: white;
     background-image: radial-gradient(ellipse farthest-corner at 20px 0, $color-secondary 0%, $color-primary 100%);
-    outline: none;
     border: none;
     cursor: pointer;
+
+
 }

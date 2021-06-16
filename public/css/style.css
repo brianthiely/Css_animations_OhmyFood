@@ -89,6 +89,60 @@ h2, h3, p {
   margin-right: 1em;
 }
 
+.restaurants {
+  background-color: #f6f6f6;
+  margin-top: 4em;
+}
+.restaurants__title {
+  padding-top: 2em;
+}
+
+.card-rest {
+  background-color: #f6f6f6;
+  max-height: 250px;
+  min-height: 250px;
+  border-radius: 1em;
+  box-shadow: 1px 1px 10px 1px #ccc;
+  margin-top: 2em;
+  position: relative;
+}
+.card-rest__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  min-height: 174px;
+  max-height: 174px;
+}
+.card-rest__badge {
+  background-color: #99e2d0;
+  color: #008766;
+  padding: 0.5rem;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  border-radius: 5%;
+}
+.card-rest__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.card-rest__infos {
+  color: black;
+  padding: 0.7em 1em 1em 1em;
+}
+.card-rest__name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.card-rest__city {
+  font-weight: lighter;
+  font-size: 1em;
+}
+.card-rest__like {
+  padding: 1em;
+}
 .home {
   background-color: #f6f6f6;
   padding: 2em;
@@ -108,10 +162,10 @@ h2, h3, p {
 }
 
 .header__logo {
-  text-align: center;
-  font-weight: lighter;
-  padding-top: 0.5em;
-  padding-bottom: 0.2em;
+  background-image: url(/images/logo/ohmyfood@2x.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2em;
 }
 
 .container-footer {
@@ -150,7 +204,6 @@ button {
   border-radius: 100px;
   color: white;
   background-image: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
-  outline: none;
   border: none;
   cursor: pointer;
 }
