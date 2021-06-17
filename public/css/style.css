@@ -32,6 +32,12 @@ h2, h3, p {
   font-family: Roboto;
 }
 
+@media screen and (min-width: ) {
+  .container_tab-deskt {
+    display: flex;
+  }
+}
+
 .home {
   background-color: #f6f6f6;
   padding: 2em;

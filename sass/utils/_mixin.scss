@@ -29,19 +29,19 @@
 }
 
 
-@mixin mobile-only {
+@mixin mobile {
     @media screen and (max-width: map-get($breakpoints, mobile)) {
         @content;
       }
   }
 
-  @mixin tablet-only {
+  @mixin tablet {
     @media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet)) {
         @content;
       }
   }
 
-  @mixin desktop-only {
+  @mixin desktop {
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         @content;
       }

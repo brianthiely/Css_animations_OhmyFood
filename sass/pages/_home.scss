@@ -1,3 +1,9 @@
+.container_tab-deskt {
+    @include desktop {
+        display: flex;
+    }
+}
+
 .home {
     background-color: #f6f6f6;
     padding: 2em;
