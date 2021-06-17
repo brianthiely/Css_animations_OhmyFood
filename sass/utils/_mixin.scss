@@ -1,13 +1,24 @@
 @mixin btn-degrad {
     padding: 1.2em 2.5em;
     border-radius: 100px;
-    background: $btn-degrad;
+    background-image: $degrad;
     color: white;
     border: none;
     cursor: pointer;
     position: relative;
     z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+       opacity: 0;
+    }
 }
+
 
 @mixin mobile {
     @media screen and (max-width: map-get($breakpoints, $mobile)) {
