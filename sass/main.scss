@@ -1,9 +1,8 @@
 @import "./base/base";
+@import "./utils/maps";
+@import "./utils/mixin";
 @import "./utils/variables";
 @import "./base/typography";
-@import "./pages/homeGeoloc";
-@import "./pages/homeFunction";
-@import "./pages/homeRestaurants";
 @import "./pages/home";
 @import "./layouts/header";
 @import "./layouts/footer";

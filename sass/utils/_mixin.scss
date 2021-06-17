@@ -1,0 +1,28 @@
+@mixin btn-degrad {
+    padding: 1.2em 2.5em;
+    border-radius: 100px;
+    background: $btn-degrad;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+@mixin mobile {
+    @media screen and (max-width: map-get($breakpoints, $mobile)) {
+        @content;
+      }
+  }
+
+  @mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, $mobile)) and (max-width: map-get($breakpoints, $tablet)) {
+        @content;
+      }
+  }
+
+  @mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, $desktop)) {
+        @content;
+      }
+  }
