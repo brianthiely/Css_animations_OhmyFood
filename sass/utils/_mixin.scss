@@ -23,11 +23,10 @@
         background: radial-gradient(ellipse farthest-corner at 20px 0, lighten($color-secondary, 4) 0%, lighten($color-primary, 4) 100%);
         opacity: 0;
         z-index: -1;
-        transition: opacity 250ms;
+        transition: opacity 220ms;
         box-shadow: 0.2em 0.2em 1em #ccc
     }
 }
-
 
 @mixin mobile {
     @media screen and (max-width: map-get($breakpoints, mobile)) {

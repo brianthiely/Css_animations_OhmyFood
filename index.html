@@ -23,7 +23,7 @@
             <p class="geo-loc__city">Paris,Belleville</p>
         </section>
         
-        <div class="container_tab-deskt">
+        <div class="container_home-fonct">
             <section class="home">
                 <h2 class="home__title">Réservez le menu qui vous convient</h2>
                 <p class="home__subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
@@ -38,7 +38,7 @@
                     <span class="function-list__text">Choisissez un restaurant</span></li>
                     <li class="function-list__step"><i class="fas fa-list function-list__icone"></i>
                     <span class="function-list__text">Composez votre menu</span></li>
-                    <li class="function-list__step"><i class="fas fa-store function-list__icone--purple"></i>
+                    <li class="function-list__step function-list__step--purple"><i class="fas fa-store function-list__icone--purple"></i>
                     <span class="function-list__text">Déguster au restaurant</span></li>
                 </ol>
             </section>
@@ -47,78 +47,83 @@
         <section class="restaurants">
             <h2 class="restaurants__title">Restaurants</h2>
 
-
-            <a href="./pages/menu_la_palette_du_gout.html" class="container_card-rest">
-                <div class="card-rest">
-                    <img class="card-rest__image" src="./images/restaurants/la_palette_du_gout.jpg" alt="Assiette gastronomique composé de saumon, salade et feuilleté">
-                    <span class="card-rest__badge">Nouveau</span>
-                    <div class="card-rest__footer">
-                        <div class="card-rest__infos">
-                            <h3 class="card-rest__name">La palette du goût</h3>
-                            <p class="card-rest__city">Ménilmontant</p>
+            <div class="container-rest">
+                <div class="container_card-rest">
+                    <a href="./pages/menu_la_palette_du_gout.html">
+                        <div class="card-rest">
+                            <img class="card-rest__image" src="./images/restaurants/la_palette_du_gout.jpg" alt="Assiette gastronomique composé de saumon, salade et feuilleté">
+                            <span class="card-rest__badge">Nouveau</span>
+                            <div class="card-rest__footer">
+                                <div class="card-rest__infos">
+                                    <h3 class="card-rest__name">La palette du goût</h3>
+                                    <p class="card-rest__city">Ménilmontant</p>
+                                </div>     
+                    </a>
+                            <div class="card-rest__like">
+                                <i class="card-rest__like--disable far fa-heart fa-2x"></i>
+                                <i class="card-rest__like--enable fas fa-heart fa-2x"></i>
+                            </div>
                         </div>
-
-                        <div class="card-rest__like">
-                            <i class="card-rest__like--heart-disable far fa-heart"></i>
-                            <i class="card-rest__like--heart-enable fas fa-heart"></i>
-                        </div>
-                    </div>
+                    </div> 
                 </div>
-            </a>
 
-            <a href="./pages/menu_la_note_enchantee.html" class="container_card-rest">
-                <div class="card-rest">
-                    <img class="card-rest__image" src="./images/restaurants/la_note_enchantee.jpg" alt="Assiette meditérranéenne composé de falafels, olives, tomates séché et autres légumes en sauce">
-                    <span class="card-rest__badge">Nouveau</span>
-                    <div class="card-rest__footer">
-                        <div class="card-rest__infos">
-                            <h3 class="card-rest__name">La note enchantée</h3>
-                            <p class="card-rest__city">Charonne</p>
+                <div class="container_card-rest">
+                    <a href="./pages/menu_la_note_enchantee.html" class="container_card-rest">
+                        <div class="card-rest">
+                            <img class="card-rest__image" src="./images/restaurants/la_note_enchantee.jpg" alt="Assiette meditérranéenne composé de falafels, olives, tomates séché et autres légumes en sauce">
+                            <span class="card-rest__badge">Nouveau</span>
+                            <div class="card-rest__footer">
+                                <div class="card-rest__infos">
+                                    <h3 class="card-rest__name">La note enchantée</h3>
+                                    <p class="card-rest__city">Charonne</p>
+                                </div>
+                    </a>
+                                <div class="card-rest__like">
+                                    <i class="card-rest__like--disable far fa-heart fa-2x"></i>
+                                    <i class="card-rest__like--enable fas fa-heart fa-2x"></i>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="card-rest__like">
-                            <i class="card-rest__like--heart-disable far fa-heart"></i>
-                            <i class="card-rest__like--heart-enable fas fa-heart"></i>
-                        </div>
-                    </div>
                 </div>
-            </a>
-
-            <a href="./pages/menu_a_la_francaise.html" class="container_card-rest">
-                <div class="card-rest">
-                    <img class="card-rest__image" src="./images/restaurants/a_la_francaise.jpg" alt="Tartine de pain brioché sur sont sont lit de feuilles d'épinard accompagné d'oeufs pochés">
-                    <span class="card-rest__badge">Nouveau</span>
-                    <div class="card-rest__footer">
-                        <div class="card-rest__infos">
-                            <h3 class="card-rest__name">À la française</h3>
-                            <p class="card-rest__city">Cité Rouge</p>
+                
+                <div class="container_card-rest">
+                    <a href="./pages/menu_a_la_francaise.html" class="container_card-rest">
+                        <div class="card-rest">
+                            <img class="card-rest__image" src="./images/restaurants/a_la_francaise.jpg" alt="Tartine de pain brioché sur sont sont lit de feuilles d'épinard accompagné d'oeufs pochés">
+                            <span class="card-rest__badge">Nouveau</span>
+                            <div class="card-rest__footer">
+                                <div class="card-rest__infos">
+                                    <h3 class="card-rest__name">À la française</h3>
+                                    <p class="card-rest__city">Cité Rouge</p>
+                                </div>
+                    </a>
+                                <div class="card-rest__like">
+                                    <i class="card-rest__like--disable far fa-heart fa-2x"></i>
+                                    <i class="card-rest__like--enable fas fa-heart fa-2x"></i>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="card-rest__like">
-                            <i class="card-rest__like--heart-disable far fa-heart"></i>
-                            <i class="card-rest__like--heart-enable fas fa-heart"></i>
-                        </div>
-                    </div>
                 </div>
-            </a>
 
-            <a href="./pages/menu_le_delice_des_sens.html" class="container_card-rest">
-                <div class="card-rest">
-                    <img class="card-rest__image" src="./images/restaurants/le_delice_des_sens.jpg" alt="Poisson mariné avec des légumes meditérranéen">
-                    <span class="card-rest__badge">Nouveau</span>
-                    <div class="card-rest__footer">
-                        <div class="card-rest__infos">
-                            <h3 class="card-rest__name">Le délice des sens</h3>
-                            <p class="card-rest__city">Folie-Méricourt</p>
+                <div class="container_card-rest">
+                    <a href="./pages/menu_le_delice_des_sens.html" class="container_card-rest">
+                        <div class="card-rest">
+                            <img class="card-rest__image" src="./images/restaurants/le_delice_des_sens.jpg" alt="Poisson mariné avec des légumes meditérranéen">
+                            <span class="card-rest__badge">Nouveau</span>
+                            <div class="card-rest__footer">
+                                <div class="card-rest__infos">
+                                    <h3 class="card-rest__name">Le délice des sens</h3>
+                                    <p class="card-rest__city">Folie-Méricourt</p>
+                                </div>
+                    </a>
+                                <div class="card-rest__like">
+                                    <i class="card-rest__like--disable far fa-heart fa-2x"></i>
+                                    <i class="card-rest__like--enable fas fa-heart fa-2x"></i>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="card-rest__like">
-                            <i class="card-rest__like--heart-disable far fa-heart"></i>
-                            <i class="card-rest__like--heart-enable fas fa-heart"></i>
-                        </div>
-                    </div>
                 </div>
-            </a>
+            </div>
         </section>
     </main>
 </body>
