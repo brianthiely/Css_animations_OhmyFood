@@ -267,23 +267,26 @@
     &__like {
         display: flex;
         align-items: center;
-        margin-right: 2em;
+        cursor: pointer;
+    }
 
-        &--disable {
-            position: absolute;
-            z-index: 1;
-            right: 10%;
-            color: black;
-        }
-
-        &--enable {
-            position: absolute;
-            z-index: 2;
-            right: 10%;
-            color: transparent; 
-            }
+    &__heart {
+        @include heart-degrad
     }
 }
+
+    
+
+
+
+
+    // &:hover::before {
+    // }
+    // &::before {
+    //   transition: 25ms;
+    //   content: "";
+    //   background:$heart-degrad;
+    // }
 
 
 // .fa-heart {

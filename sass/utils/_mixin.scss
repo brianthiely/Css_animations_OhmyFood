@@ -28,6 +28,23 @@
     }
 }
 
+@mixin heart-degrad  {
+        position: relative;
+        &--noBg {
+            position: absolute;
+            right: 10%;
+            z-index: 1;
+            &:hover {
+                content: "\f004";
+                font-weight: bold;
+                transition: 220ms ease-out;
+                background: $heart-degrad;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+}
+
 @mixin mobile {
     @media screen and (max-width: map-get($breakpoints, mobile)) {
         @content;

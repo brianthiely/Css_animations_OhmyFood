@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
 }
@@ -302,19 +303,23 @@ h2, h3, p {
 .card-rest__like {
   display: flex;
   align-items: center;
-  margin-right: 2em;
+  cursor: pointer;
 }
-.card-rest__like--disable {
+.card-rest__heart {
+  position: relative;
+}
+.card-rest__heart--noBg {
   position: absolute;
+  right: 10%;
   z-index: 1;
-  right: 10%;
-  color: black;
 }
-.card-rest__like--enable {
-  position: absolute;
-  z-index: 2;
-  right: 10%;
-  color: transparent;
+.card-rest__heart--noBg:hover {
+  content: "";
+  font-weight: bold;
+  transition: 220ms ease-out;
+  background: -webkit-linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header__logo {
