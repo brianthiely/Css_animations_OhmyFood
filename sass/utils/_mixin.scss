@@ -29,7 +29,6 @@
 }
 
 @mixin heart-degrad  {
-        position: relative;
         &--noBg {
             position: absolute;
             right: 10%;

@@ -1,0 +1,106 @@
+.page-menu--image {
+    max-height: 16em;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.menu {
+    top: 40%;
+    width: 100%;
+    border-radius: 2em 2em 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: absolute;
+
+    &__header {
+        padding: 1em 2em 0 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__like {
+        display: flex;
+        align-items: center;
+        @include heart-degrad;
+    }
+}
+
+.menu-bloc {
+    display: grid;
+    @include desktop {
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1rem;
+    }
+
+    @include tablet {
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1rem;
+    }
+
+    &__step {
+        overflow: hidden;
+    }
+
+    &__title {
+        font-size: 1.2em;
+        font-weight: lighter;
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 0.5em;
+        margin-top: 2em;
+            &::after {
+                content: "";
+                background-color: $color-tertiary;
+                width: 3em;
+                height: .25em;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+    }
+
+    &__card {
+        display: flex;
+        background-color: white;
+        border-radius: .75em;
+        box-shadow: 1px 1px 10px 1px #ccc;
+        overflow: hidden;
+        cursor: pointer;
+        padding: 1em;
+        margin-top: 1em;
+    }
+
+    &__meal {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+    }
+
+    &__nameMeal {
+        font-size: 1em;
+        font-family: Roboto;
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__subnameMeal {
+        font-size: 1em;
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__price {
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-left: .5em;
+    }
+}
