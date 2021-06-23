@@ -34,6 +34,14 @@ section {
     transform: scale(3.5) rotate(360deg);
   }
 }
+@keyframes menuAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 h1 {
   font-family: Shrikhand;
   margin: 0;
@@ -62,6 +70,10 @@ h2, h3, p {
 
 .menu__title {
   font-size: 1.5em;
+}
+
+.menu-card__price {
+  font-family: Roboto;
 }
 
 .loader {
@@ -390,7 +402,6 @@ h2, h3, p {
   max-height: 16em;
   width: 100%;
   object-fit: cover;
-  position: relative;
 }
 
 .menu {
@@ -398,8 +409,8 @@ h2, h3, p {
   width: 100%;
   border-radius: 2em 2em 0 0;
   background-color: #f6f6f6;
-  z-index: 1;
-  position: absolute;
+  position: relative;
+  margin-top: -4em;
 }
 .menu__header {
   padding: 1em 2em 0 1em;
@@ -450,6 +461,7 @@ h2, h3, p {
   position: relative;
   padding-bottom: 0.5em;
   margin-top: 2em;
+  margin-bottom: 1em;
 }
 .menu-bloc__title::after {
   content: "";
@@ -460,7 +472,8 @@ h2, h3, p {
   left: 0;
   bottom: 0;
 }
-.menu-bloc__card {
+
+.menu-card {
   display: flex;
   background-color: white;
   border-radius: 0.75em;
@@ -468,15 +481,15 @@ h2, h3, p {
   overflow: hidden;
   cursor: pointer;
   padding: 1em;
-  margin-top: 1em;
+  margin-bottom: 1em;
+  animation: menuAppear 1s cubic-bezier(1, 0.01, 0, 0.99) both;
 }
-.menu-bloc__meal {
-  white-space: nowrap;
+.menu-card__meal {
   text-overflow: ellipsis;
   overflow: hidden;
   flex: 1;
 }
-.menu-bloc__nameMeal {
+.menu-card__nameMeal {
   font-size: 1em;
   font-family: Roboto;
   margin: 0;
@@ -484,19 +497,54 @@ h2, h3, p {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu-bloc__subnameMeal {
+.menu-card__subnameMeal {
   font-size: 1em;
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu-bloc__price {
+.menu-card__price {
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   padding-left: 0.5em;
+}
+.menu-card__confirmation {
+  background-color: #99E2D0;
+  margin: -1em -5em -1em 1em;
+  width: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-out 250ms;
+}
+.menu-card:hover .menu-card__confirmation {
+  margin-right: -1rem;
+}
+.menu-card__check {
+  height: 1.6em;
+  width: 1.6em;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.menu-card:hover .menu-card__check {
+  transform: rotate(0);
+}
+.menu-card__icone {
+  color: #99E2D0;
+}
+
+.button-menu {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
 }
 
 .footer-bloc {
@@ -504,9 +552,6 @@ h2, h3, p {
   flex-direction: column;
   padding: 1.5em;
   background-color: #353535;
-  margin-top: 4em;
-  position: relative;
-  z-index: 1;
 }
 .footer-bloc__logo {
   font-size: 1.2em;
@@ -554,7 +599,7 @@ h2, h3, p {
   color: white;
 }
 
-.home__button {
+.home__button, .button--degrad {
   padding: 1.2em 2.5em;
   border-radius: 100px;
   background: radial-gradient(ellipse farthest-corner at 20px 0, #FF79DA 0%, #9356DC 100%);
@@ -564,10 +609,10 @@ h2, h3, p {
   position: relative;
   z-index: 1;
 }
-.home__button:hover::after {
+.home__button:hover::after, .button--degrad:hover::after {
   opacity: 1;
 }
-.home__button::after {
+.home__button::after, .button--degrad::after {
   content: "";
   position: absolute;
   border-radius: 100px;
