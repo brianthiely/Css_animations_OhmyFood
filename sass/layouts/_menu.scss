@@ -142,6 +142,11 @@
         color: $color-tertiary;
       }
 }
+@for $i from 1 through 10 {
+    .delay-#{$i} {
+        animation-delay: #{$i/10}s;
+    }
+}
 
 .button-menu {
     display: flex;
