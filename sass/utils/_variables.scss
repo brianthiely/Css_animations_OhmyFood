@@ -5,4 +5,4 @@ $color-tertiary: #99E2D0;
 
 $degrad: radial-gradient(ellipse farthest-corner at 20px 0, $color-secondary 0%, $color-primary 100%);
 
-$heart-degrad : -webkit-linear-gradient(175deg, $color-secondary 10%, $color-primary 95%);
+$heart-degrad : linear-gradient(175deg, $color-secondary 10%, $color-primary 95%);
