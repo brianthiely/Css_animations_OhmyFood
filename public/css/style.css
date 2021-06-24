@@ -373,8 +373,10 @@ h2, h3, p {
 .card-rest__heart--noBg:hover {
   content: "";
   font-weight: bold;
-  transition: 170ms ease-out;
-  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+  background-color: #9356DC;
+  background-image: linear-gradient(#FF79DA, rgba(255, 255, 255, 0));
+  transform-origin: bottom;
+  transition: background-color 2s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -432,8 +434,10 @@ h2, h3, p {
 .menu__like--noBg:hover {
   content: "";
   font-weight: bold;
-  transition: 170ms ease-out;
-  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+  background-color: #9356DC;
+  background-image: linear-gradient(#FF79DA, rgba(255, 255, 255, 0));
+  transform-origin: bottom;
+  transition: background-color 2s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
