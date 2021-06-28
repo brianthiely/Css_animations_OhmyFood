@@ -84,7 +84,6 @@
 
     &__nameMeal {
         font-size: 1em;
-        font-family: Roboto;
         margin: 0;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -142,6 +141,7 @@
         color: $color-tertiary;
       }
 }
+
 @for $i from 1 through 10 {
     .delay-#{$i} {
         animation-delay: #{$i/10}s;
@@ -152,8 +152,4 @@
     display: flex;
     justify-content: center;
     padding: 2em;;
-}
-
-.button--degrad {
-    font-size: 1em;
 }
