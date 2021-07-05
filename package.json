@@ -7,7 +7,6 @@
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
     "build": "sass --style compressed ./sass/main.scss:./public/css/style.css",
     "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
-
   },
   "repository": {
     "type": "git",
@@ -21,6 +20,7 @@
   },
   "homepage": "https://github.com/brianthiely/BrianThiely_3_13062021#readme",
   "dependencies": {
+    "postcss": "^8.3.5",
     "sass": "^1.34.1"
   }
 }

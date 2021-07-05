@@ -144,7 +144,7 @@
 
 @for $i from 1 through 10 {
     .delay-#{$i} {
-        animation-delay: #{$i/10}s;
+        animation-delay: math.div($i,10) + 's';
     }
 }
 
